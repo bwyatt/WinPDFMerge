@@ -15,6 +15,7 @@ using System.Windows.Shapes;
 using PdfSharp;
 using PdfSharp.Pdf;
 using PdfSharp.Pdf.IO;
+using System.Diagnostics;
 
 namespace WinPDFMerge
 {
@@ -119,8 +120,6 @@ namespace WinPDFMerge
 
                 PdfDocument currentDocument = PdfReader.Open(currentPath, PdfDocumentOpenMode.Import);
                 
-                MessageBox.Show(currentDocument.FullPath);
-
                 // Loop over pages in file, adding them to output
                 for (int pageNumber = 0; pageNumber < currentDocument.PageCount; pageNumber++)
                 {
@@ -131,6 +130,12 @@ namespace WinPDFMerge
 
             // Write file
             outputFile.Save(txtDestinationPath.Text);
+
+            // If the checkbox is checked, open the file
+            if (chkOpenAfter.IsChecked == true)
+            {
+                System.Diagnostics.Process.Start(txtDestinationPath.Text);
+            }
         }
 
         // Helper function to toggle controls on/off based on whether 
