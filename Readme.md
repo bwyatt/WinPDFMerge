@@ -1,7 +1,10 @@
-# WinMergePDF #
+# WinMergePDF#
 
 ##Description##
 A small graphical utility for Windows to merge multiple PDF files into one document.
+
+##Installer##
+If you're not interested in the source code, which is available from this project, you can get the installer from [this Dropbox page](https://www.dropbox.com/s/jy7tra2bj83pam6/setup.exe?dl=0). 
 
 ##Technical Info##
 WinMergePDF is written in C#, utilizing WPF.
