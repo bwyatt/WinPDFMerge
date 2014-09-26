@@ -5,16 +5,40 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinPDFMerge", "WinPDFMerge\WinPDFMerge.csproj", "{3E0A0CBC-20CB-4913-84D2-380F9953510D}"
 EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup", "Setup\Setup.isproj", "{1A80CCAD-0C56-4924-82FF-4297B62A4EEE}"
+	ProjectSection(ProjectDependencies) = postProject
+		{3E0A0CBC-20CB-4913-84D2-380F9953510D} = {3E0A0CBC-20CB-4913-84D2-380F9953510D}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
 		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
 		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E0A0CBC-20CB-4913-84D2-380F9953510D}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0A0CBC-20CB-4913-84D2-380F9953510D}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
 		{3E0A0CBC-20CB-4913-84D2-380F9953510D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3E0A0CBC-20CB-4913-84D2-380F9953510D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E0A0CBC-20CB-4913-84D2-380F9953510D}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E0A0CBC-20CB-4913-84D2-380F9953510D}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
 		{3E0A0CBC-20CB-4913-84D2-380F9953510D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3E0A0CBC-20CB-4913-84D2-380F9953510D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E0A0CBC-20CB-4913-84D2-380F9953510D}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{3E0A0CBC-20CB-4913-84D2-380F9953510D}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{1A80CCAD-0C56-4924-82FF-4297B62A4EEE}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{1A80CCAD-0C56-4924-82FF-4297B62A4EEE}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{1A80CCAD-0C56-4924-82FF-4297B62A4EEE}.Debug|Any CPU.ActiveCfg = DVD-5
+		{1A80CCAD-0C56-4924-82FF-4297B62A4EEE}.Debug|Any CPU.Build.0 = DVD-5
+		{1A80CCAD-0C56-4924-82FF-4297B62A4EEE}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{1A80CCAD-0C56-4924-82FF-4297B62A4EEE}.DVD-5|Any CPU.Build.0 = DVD-5
+		{1A80CCAD-0C56-4924-82FF-4297B62A4EEE}.Release|Any CPU.ActiveCfg = SingleImage
+		{1A80CCAD-0C56-4924-82FF-4297B62A4EEE}.Release|Any CPU.Build.0 = SingleImage
+		{1A80CCAD-0C56-4924-82FF-4297B62A4EEE}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{1A80CCAD-0C56-4924-82FF-4297B62A4EEE}.SingleImage|Any CPU.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
