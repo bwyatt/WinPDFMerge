@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using PdfSharp;
 using PdfSharp.Pdf;
+using PdfSharp.Pdf.IO;
 
 namespace WinPDFMerge
 {
@@ -116,7 +117,7 @@ namespace WinPDFMerge
                 ListBoxItem currentItem = (ListBoxItem)lstFiles.Items.GetItemAt(documentNumber);
                 string currentPath = currentItem.Content.ToString();
 
-                PdfDocument currentDocument = new PdfDocument(currentPath);
+                PdfDocument currentDocument = PdfReader.Open(currentPath, PdfDocumentOpenMode.Import);
                 
                 MessageBox.Show(currentDocument.FullPath);
 
